@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Cgpa calculator</title>
+    </head>
+    <script>
+        function mycgpa()
+        {
+            var v1=document.getElementById("i1").value;
+            var c1=document.getElementById("c1").value;
+            v1=v1*c1;
+            var v2=document.getElementById("i2").value;
+            var c2=document.getElementById("c2").value;
+            v2=v2*c2;
+            var v3=document.getElementById("i3").value;
+            var c3=document.getElementById("c3").value;
+            v3=v3*c3;
+            var v4=document.getElementById("i4").value;
+            var c4=document.getElementById("c4").value;
+            v4=v4*c4;
+            var v5=document.getElementById("i5").value;
+            var c5=document.getElementById("c5").value;
+            v5=v5*c5;
+            var v6=document.getElementById("i6").value;
+            var c6=document.getElementById("c6").value;
+            v6=v6*c6;
+            var v7=document.getElementById("i7").value;
+            var c7=document.getElementById("c7").value;
+            v7=v7*c7;
+            var v8=document.getElementById("i8").value;
+            var c8=document.getElementById("c8").value;
+            v8=v8*c8;
+            var v9=document.getElementById("i9").value;
+            var c9=document.getElementById("c9").value;
+            v9=v9*c9;
+            var v10=document.getElementById("i10").value;
+            var c10=document.getElementById("c10").value;
+            v10=v10*c10;
+            let tc=parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10);
+            var cgpa=parseFloat(v1)+parseFloat(v2)+parseFloat(v3)+parseFloat(v4)+parseFloat(v5)+parseFloat(v6)+parseFloat(v7)+parseFloat(v8)+parseFloat(v9)+parseFloat(v10);
+                document.getElementById("a1").innerHTML=parseFloat(cgpa/tc);
+        }
+    </script>
+    <style>
+        table{
+            margin-top:100px;
+            height:1010px;
+            border:2px solid black;
+            width:700px;
+        }
+        input:hover{
+            background-color:floralwhite;
+        }
+        hr{
+            border:1px solid black;
+        }
+        button{
+            margin-left:235;
+            width:200px;
+            height:40px;
+            background-color: white;
+            margin-top:-20px;
+            border:5px solid rgb(231, 100, 12);
+            color:blue;
+            border-radius: 10px;
+        }
+        input{
+            margin-top:2%;
+            width:280px;
+            height:60px;
+            margin-left:1%;
+            border:2px solid black;
+        }
+        #i1{
+            margin-left:60px;
+        }
+        #i2{
+            margin-left:60px;
+        }
+        #i3{
+            margin-left:60px;
+        }
+        #i4{
+            margin-left:60px;
+        }
+        #i5{
+            margin-left:60px;
+        }
+        #i6{
+            margin-left:60px;
+        }
+        #i7{
+            margin-left:60px;
+        }
+        #i8{
+            margin-left:60px;
+        }
+        #i9,#i10{
+            margin-left:60px;
+        }
+        img{
+            margin-bottom: -25px;
+        }
+        marquee{
+            margin-top:-8px;
+            color:brown
+        }
+        h4{
+            margin-top:-5px;
+            margin-bottom:-2px;
+        }
+        #p0{
+            margin-top:-33px;
+            color:red;
+        }
+        #p1{
+            margin-top:-40px;
+            margin-left:14px;
+            background-color: bisque;
+            width:520;
+        }
+    </style>
+    <body>
+        <center><table><tr><td>
+        <img src="https://quotefancy.com/media/wallpaper/3840x2160/2025886-Zig-Ziglar-Quote-A-positive-attitude-will-have-positive-results.jpg" width="692" height="150"><br><br>
+        <hr>
+        <marquee>Sasians cgpa calculator for IV B.TECH II-SEM</marquee><br>
+        <hr>
+        <input type="number" Id="i1" placeholder="subject1 gp"><input type="number" placeholder="credits" Id="c1"><br>
+        <input type="number" Id="i2" placeholder="subject2 gp"><input type="number" Id="c2" placeholder="credits"><br>
+        <input type="number" Id="i3" placeholder="subject3 gp"><input type="number" Id="c3" placeholder="credits"><br>
+        <input type="number" Id="i4" placeholder="subject4 gp"><input type="number" Id="c4" placeholder="credits"><br>
+        <input type="number" Id="i5" placeholder="subject5 gp"><input type="number" Id="c5" placeholder="credits"><br>
+        <input type="number" Id="i6" placeholder="subject6 gp"><input type="number" Id="c6" placeholder="credits"><br>
+        <input type="number" Id="i7" placeholder="lab1"><input type="number" Id="c7" placeholder="credits"><br>
+        <input type="number" Id="i8" placeholder="lab2"><input type="number" Id="c8" placeholder="credits"><br>
+        <input type="number" Id="i9" placeholder="lab3"><input type="number" Id="c9" placeholder="credits"><br>
+        <input type="number" Id="i10" placeholder="Internship"><input type="number" Id="c10" placeholder="credits"><br>
+        <p Id="a1"></p><br>
+        <button type="button" onclick="mycgpa()">CLICK</button><br><br><hr>
+        <hr>
+        <br>
+        <h1 Id="p0">Instruction:<br></h1><br>
+        <p Id="p1">if your higher grade is Ex then Ex=10 and A+=9 A=8 B=7 C=6 D=5 F=0 or <br>if your higher grade is A+ then A+=10 and A=9 B=8 C=7 D=6 E=5 F=0</p>
+        </table></tr></td></center>
+    </body>
+</html>
